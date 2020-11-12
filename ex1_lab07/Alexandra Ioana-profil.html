@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<style>
+img {
+   border-radius: 12px;
+  border:2px solid black;
+  opacity: 0.5;
+  display: black;
+  margin: right;
+  
+}
+
+body{background-color:lightblue;
+}
+h1{
+    color: darkblue;
+	text-align:center;
+	}
+p{
+  color: green;
+  font-family: verdana;
+  font-size: 15px;
+  }
+  table, th, td {
+  border: 1px solid black;
+  background-color:red;
+  }
+  th{
+  background-color: white;
+  }
+  ul li{
+  background-color:pink;
+  margin: 5px;
+  }
+</style>
+<script>
+			     function veziViitor(){
+				     document.getElementById("numeProfil").innerHTML ="Ing. Lapadat Alexandra Ioana";
+					 
+					 var tabelEducatie= document.getElementById("tabEducatie");
+					 tabelEducatie.rows[0].cells[0].innerHTML="UTCN";
+					 tabelEducatie.rows[0].cells[2].innerHTML="Lucrul in echipa";
+					 tabelEducatie.rows[1].cells[0].innerHTML="CNMV";
+					 tabelEducatie.rows[1].cells[2].innerHTML="Management";
+					 tabelEducatie.rows[2].cells[0].innerHTML="Voluntariat";
+					 tabelEducatie.rows[2].cells[1].innerHTML="Anul 3";
+					 tabelEducatie.rows[2].cells[2].innerHTML="Intership MSAL";
+					 tabelEducatie.rows[3].cells[0].innerHTML="Vorbitul in public";
+					 tabelEducatie.rows[3].cells[1].innerHTML="Anul 4";
+					 tabelEducatie.rows[3].cells[2].innerHTML="Proiect finalizat";
+					 
+					 document.getElementById("pozaProfil").src="AER_5743.jpg";
+					 
+					 document.body.style.backgroundColor="pink";
+					 
+					 var par = document.getElementByTagNume("p");
+					 var i;
+					 for(i = 0; i < par.lenght; i++) {
+					 par[i].style.color= "green";}
+					 
+					 document.getElementById("pozaProfil").style.opacity= "0.9";
+					 document.getElementById("pozaProfil").style.border = "6px";
+					 }
+			</script>
+<body>
+
+<h1>Lăpădat Alexandra Ioana</h1>
+<h2 id="numeProfil">Lapadat Alexandra Ioana</h2>
+
+<img id="pozaProfil" src="AER_4619.jpg"  width="350" height="500">
+<p>lapadatale12@gmail.com</p>
+<p>0740******</p>
+<p>Singurul mod de a îți defini limitele, este să le depășești.</p>
+<button onclick="veziViitor()">Alta viata</button>
+<h2>Materii preferate</h2>
+<table id="tabEducatie">
+<tr>
+    <th>Numele disciplinei</th>
+    <th>Anul</th> 
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor-Limbaje </td>
+	 <td>Anul I</td> 
+	<td>
+	  <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf">Descriere disciplina </a>
+	  </td>
+    
+  </tr>
+  <tr>
+    <td>Informatica aplicata</td>
+	<td>Anul I</td> 
+    <td>
+	<a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf">Descriere disciplina</a>
+	</td>
+    
+  </tr>
+  <tr>
+    <td>Componente si circuite electronice pasive</td>
+	<td>Anul I</td> 
+    <td>
+	   <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">Descriere disciplina</a>
+	   </td>
+    
+  </tr>
+</table>
+<h2>Pasiuni/hobby-uri</h2>
+<ul>
+  <li>Sa merg la sala</li>
+  <li>Sa ascult muzica</li>
+  <li>Sa petrec timp cu prietenii</li>
+</ul>
+
+<a href="file:///C:/Users/Alexandra/Desktop/exercitiul%202_lab06/Catalogul%20grupei.html">Catalogul Grupei</a>
+ <link rel="stylesheet"type="text/css"href="new style.css">
+</body>
+</html>
