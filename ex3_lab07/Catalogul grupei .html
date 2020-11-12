@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<body>
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" style="text-align:center">
+  <img src="thomas.jpg" width="300px" height="300px">
+    <div class="text"><a href="file:///C:/Users/Alexandra/Desktop/ex3_lab07/Profil%203.html">Bontya Thomas</a></div>
+  
+  <div class="mySlides fade" style="text-align:center"> 
+    <img src="poza profil.jpg" width="300px" height="300px" >
+    <div class="text"><a href="file:///C:/Users/Alexandra/Desktop/ex3_lab07/LABORATOR5.html"> Dobrea Marius</div>
+  </div>
+
+  <div class="mySlides fade" style="text-align:center>
+   
+    <img src="Apetroaie Alexandru.jpg" width="300px" height="300px"  >
+    <div class="text"><a href="file:///C:/Users/Alexandra/Desktop/ex3_lab07/Profil.html">Apetroaie Alexandru</div>
+  </div>
+  <div class="mySlides fade" style="text-align:center">
+  <img src="AER_4619.jpg" width="300px" height="300px">
+    <div class="text"><a href="file:///C:/Users/Alexandra/Desktop/ex3_lab07/Lapadat%20Alexandra-profil3.html">Lapadat Alexandra</a></div>
+
+ 
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" ></span>
+  <span class="dot" ></span>
+  <span class="dot" ></span>
+</div>
+		
+		<script>
+	var slideIndex = 1;
+
+	
+
+	window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+     setInterval(() => {
+  	console.log("1: " + slideIndex );
+
+
+  if(slideIndex>3){
+  	slideIndex=1;
+
+  	 console.log('test 1', slideIndex);
+
+  	plusSlides(slideIndex);
+  	}else{
+
+  	//	slideIndex+=1;
+ console.log('test 2', 1);
+  		 plusSlides(1); 
+
+  	}
+  
+ }, 3000 )
+});
+	
+		showSlides(slideIndex);
+
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+    
+	</body>
+</html>
